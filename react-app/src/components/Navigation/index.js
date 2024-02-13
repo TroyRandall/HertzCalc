@@ -2,9 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
+import calc from "../../assets/calc.png"
 import "./Navigation.css";
-import logo from "../../assets/logo.png";
-
 function Navigation({ isLoaded }) {
   const currentUser = useSelector((state) => state.session.user);
   const profileURL = `/profile/${currentUser?.id}`;
@@ -18,7 +17,7 @@ function Navigation({ isLoaded }) {
             {" "}
             <NavLink exact to="/" id="nav-logo">
               <img
-                src={logo}
+              src={calc}
                 alt="hands outlined in white clapping with a vibrant blue background"
                 id="nav-logo"
               />

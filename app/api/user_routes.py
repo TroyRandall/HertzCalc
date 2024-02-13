@@ -28,8 +28,5 @@ def user(id):
 def userByEmail(email):
 
     currentUser=User.query.filter(User.email == email).all()
-<<<<<<< HEAD
     return currentUser[0].to_dict()
-=======
     return currentUser.to_dict()
->>>>>>> 3248a660 (truncated history)

@@ -5,12 +5,9 @@ import OpenModalButton from "../OpenModalButton";
 import LoginFormModal from "../LoginFormModal";
 import SignupFormModal from "../SignupFormModal";
 
-<<<<<<< HEAD
-import { auth } from '../../firebase'
-import { signOut } from "firebase/auth";
+// import { auth } from '../../firebase'
+// import { signOut } from "firebase/auth";
 
-=======
->>>>>>> 3248a660 (truncated history)
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
@@ -37,13 +34,9 @@ function ProfileButton({ user }) {
 
   const handleLogout = (e) => {
     e.preventDefault();
-<<<<<<< HEAD
-    signOut(auth)
+    // signOut(auth)
     dispatch(logout());
 
-=======
-    dispatch(logout());
->>>>>>> 3248a660 (truncated history)
   };
 
   const ulClassName = "profile-dropdown" + (showMenu ? "" : " hidden");

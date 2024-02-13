@@ -15,12 +15,6 @@ class User(db.Model, UserMixin):
     hashed_password = db.Column(db.String(255), nullable=False)
     firstName = db.Column(db.String(50), nullable=False)
     lastName = db.Column(db.String(50), nullable=False)
-    aboutMe = db.Column(db.String(255), nullable=False)
-<<<<<<< HEAD
-    role = db.Column(db.String(), default='Fan')
-=======
->>>>>>> 3248a660 (truncated history)
-    imageUrl = db.Column(db.String(), nullable=True)
 
     @property
     def password(self):
@@ -40,10 +34,4 @@ class User(db.Model, UserMixin):
             'email': self.email,
             'firstName': self.firstName,
             'lastName': self.lastName,
-            'aboutMe': self.aboutMe,
-<<<<<<< HEAD
-            'role': self.role,
-=======
->>>>>>> 3248a660 (truncated history)
-            'imageUrl': self.imageUrl
         }

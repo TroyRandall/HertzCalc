@@ -16,6 +16,8 @@ class User(db.Model, UserMixin):
     firstName = db.Column(db.String(50), nullable=False)
     lastName = db.Column(db.String(50), nullable=False)
 
+    calc=db.relationship("Calculator", back_populates='user')
+    
     @property
     def password(self):
         return self.hashed_password
